@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('image.png'); /* Replace with the path to your background image */
+    background-attachment: fixed; /* Keep the background fixed */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.content {
+    position: relative; /* Relative positioning for content */
+    z-index: 1; /* Ensure content is above the background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for content */
+}
+.scroll-section {
+    background: radial-gradient(42.38% 44.19% at 50.14% 67.33%, #FFF280 0%, #FFC700 100%);
+    border-radius: 40px;
+    margin-top: 770px;
+    margin-left: 14px;
+    margin-right: 14px;
+    padding: 70px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    min-height: 150vh;
+    width: 100%;
+}
+
+.dog-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.dog-image {
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.history-prefix {
+    color: #F76902D1;
+    font-size: 50px;
+    text-align: left;
+}
+
+.history-alabay {
+    color: white;
+    font-size: 110px;
+    text-align: left;
+}
+
+.history-description {
+    font-family: Montserrat;
+    font-size: 34px;
+    color: black;
+    max-width: 500px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Navigation buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #F76902D1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #F7A502;
+}
+
+.media-heading {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.media-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.media-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.media-item {
+    max-width: 30%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow-button.left {
+    left: 0;
+}
+
+.arrow-button.right {
+    right: 0;
+}
+.project-vision {
+    font-family: 'Cheeseburga', cursive;
+    color: #FFA800;
+    font-size: 48px; /* Adjust size as per your needs */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-vision-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; /* Reduce the image size */
+}
+.mission-statement {
+    font-family: 'Khumb Sans'; /* Font for mission statement */
+    font-size: 24px; /* Adjust size as needed */
+    color: black; /* Or any color you prefer */
+    text-align: center; /* Center align the text */
+    margin-top: 20px; /* Spacing above the text */
+    padding:15px 40px 35px; /* Optional padding */
+}
+/* Roadmap Styles */
+.roadmap-title {
+    font-family: 'Cheeseburga'; /* Font for roadmap title */
+    font-size: 48px; /* Adjust as needed */
+    color: #FFA800; /* Golden color */
+    text-align: center;
+    margin: 20px 0; /* Spacing around the heading */
+}
+
+.roadmap-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center align vertically */
+    margin: 20px 0; /* Spacing above and below the container */
+}
+
+.roadmap-text {
+    flex: 1; /* Allow text to take available space */
+    margin-right: 20px; 
+    margin-left:40px;
+    color:black;
+    font-size:30px; /* Spacing between text and image */
+}
+
+.roadmap-image {
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Adjust height as necessary */
+    max-width: 45%; /* Adjust width as needed */
+    display: block; /* Center the image if needed */
+}
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Add space between images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px 0; /* Space above and below the image container */
+}
+
+.image-box {
+    position: relative;
+    width: 22%; /* Adjust width to fit 4 images */
+    margin: 10px; /* Space between images */
+    border-radius: 10px; /* Ensure all corners are rounded */
+}
+
+.image-item {
+    width: 100%; /* Ensure images take full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Ensure images have rounded corners */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10px; /* Position text near the top */
+    left: 10px; /* Left padding */
+    right: 10px; /* Right padding */
+    color: white; /* Change text color for visibility */
+    font-size: 20px; /* Adjust font size as needed */
+    z-index: 2; /* Ensure the text is above the image */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional shadow for better visibility */
+    padding: 5px; /* Padding for spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional background color for text readability */
+    border-radius: 5px; /* Optional border radius for text background */
+}
+.tokenomics-title {
+    font-family: 'CHEESEBURGA'; /* Ensure this matches the previous heading styles */
+    color: #FFA800; /* Color for the title */
+    text-align: center; /* Center the title */
+    margin: 20px 0; /* Space above and below */
+}
+
+.tokenomics-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between image and buttons */
+    padding: 20px; /* Padding around the container */
+}
+
+.tokenomics-image {
+    width: 40%; /* Set the width for the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.buttons-container {
+    display: flex; /* Flex layout for buttons */
+    flex-direction: column; /* Arrange buttons vertically */
+    gap: 10px; /* Space between buttons */
+    width: 55%; /* Set width for button container */
+}
+
+.big-button {
+    padding: 20px; /* Padding for buttons */
+    border-radius: 10px; /* Rounded corners */
+    display: flex; /* Flex layout for button text */
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; /* Center text horizontally */
+    justify-content: center; /* Center text vertically */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button-text {
+    text-align: center; /* Center text */
+    font-size: 18px; /* Font size */
+}
+.merchandise-heading {
+    font-size: 2em;
+    color: #FFA800; /* Adjust as needed */
+    margin: 20px 0;
+    text-align: center; /* Center the heading */
+}
+
+.media-container {
+    position: relative;
+    width: 100%; /* Container width */
+    overflow: hidden; /* Hide overflow */
+}
+
+.media-content {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.media-slide {
+    min-width: 100%; /* Each slide takes full width */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px; /* Adjust height as needed */
+}
+
+.overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; /* Adjust to fit within the slide */
+    max-height: 80%; /* Maintain aspect ratio */
+}
+
+.arrow-button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-button.left {
+    left: 10px; /* Position left arrow */
+}
+
+.arrow-button.right {
+    right: 10px; /* Position right arrow */
+}
+.games-container {
+    text-align: center;
+    margin: 50px;
+    font-size:50px;
+    color:black;
+}
+
+.image-slider {
+    position: relative;
+    display: inline-block;
+}
+
+.image-slider img {
+    width: 1000px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round the corners */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: -30px; /* Adjust as needed */
+    cursor: pointer;
+    font-size: 24px; /* Adjust as needed */
+    transform: translateY(-50%);
+    user-select: none; /* Prevent text selection */
+}
+
+.games-preview-container {
+    margin-top: 50px; /* Space between slider and preview */
+    text-align: left; /* Align text to the left */
+}
+
+.games-preview-heading {
+    font-size: 70px; /* Heading size */
+    margin-bottom: 10px; /* Space between heading and images */
+}
+
+.preview-images {
+    display: flex;
+    justify-content: center; /* Center images */
+    gap: 20px; /* Space between images */
+}
+
+.preview-images img {
+    width: 300px; /* Set your desired preview image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round the corners */
+}
+
+.social-media-container {
+    margin-top: 50px; /* Space between games section and social media links */
+    text-align: center; /* Center heading */
+}
+
+.social-media-icons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute icons */
+    align-items: center; /* Align icons vertically */
+    max-width: 600px; /* Limit maximum width */
+    margin: 0 auto; /* Center the flex container */
+    
+}
+
+.left-icons {
+    display: flex; /* Flexbox for left icons */
+    align-items: center; /* Align icons vertically */
+}
+
+.social-media-icons img {
+    height: 60px; /* Set default height for icons */
+    width: auto; /* Maintain aspect ratio */
+   
+}
+
+.main-icon {
+    height: 30px; /* Make the main icon larger */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: auto; /* Align to the right */
+    size:500px;
+}

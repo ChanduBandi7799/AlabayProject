@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Background with Scrolling Slide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Khumb+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="scroll-section">
+            <div class="dog-container">
+                <img src="1.png" alt="Central Asian Shepherd Dog" class="dog-image" />
+                <div>
+                    <h1 class="history-title">
+                        <span class="history-prefix">History Of </span>
+                        <span class="history-alabay">ALABAY</span>
+                    </h1>
+                    <p class="history-description">
+                        The Central Asian Shepherd Dog, also known as Alabay, has been a guardian of livestock and property for centuries. Originating from Central Asia, these dogs are renowned for their courage, strength, and loyalty.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Media Headings -->
+            <div class="media-heading">
+                <span id="all-heading" onclick="showAll()">All</span> | 
+                <span id="images-heading" onclick="showImages()">Images</span> | 
+                <span id="videos-heading" onclick="showVideos()">Videos</span>
+            </div>
+
+            <!-- Media Section -->
+            <div class="media-container">
+                <button class="arrow-button left" onclick="prevMedia()">&#9664;</button>
+                
+                <div class="media-content" id="media-container">
+                    <img src="2.png" alt="Image 1" class="media-item" />
+                    <img src="3.png" alt="Image 2" class="media-item" />
+                    <video class="media-item" controls>
+                        <source src="video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <button class="arrow-button right" onclick="nextMedia()">&#9654;</button>
+            </div>
+            <h1 class="project-vision">PROJECT VISION</h1>
+            <img src="6.png" class="project-vision-img" alt="Project Vision Image" />
+            <div class="mission-statement">
+                Our mission is to honor the heritage of the Alabay by creating a vibrant, loyal, and powerful community. Just as the Alabay protects its flock, we aim to build a pack that stands strong together.
+            </div>
+            <!-- Roadmap Section -->
+<h1 class="roadmap-title">Roadmap</h1>
+<div class="roadmap-container">
+    <div class="roadmap-text">
+        <p>Our journey is just beginning. Explore our roadmap to see the exciting milestones and future plans we have in store.</p>
+        <p>Join us as we grow and achieve new heights.</p>
+    </div>
+    <img src="7.png" alt="Roadmap Image" class="roadmap-image" />
+</div>
+<!-- Image Container -->
+<div class="image-container">
+    <div class="image-box" style="background-color: #FFB6C1; border-top-left-radius: 50px;">
+        <div class="text-overlay">Community Building<br>and Initial Launch</div>
+        <img src="3.png" alt="Image 3" class="image-item" />
+    </div>
+    <div class="image-box" style="background-color: #ADD8E6;">
+        <div class="text-overlay">Merchandise<br>Store Launch</div>
+        <img src="2.png" alt="Image 2" class="image-item" />
+    </div>
+    <div class="image-box" style="background-color: #90EE90;">
+        <div class="text-overlay">Community<br>Events and Contests</div>
+        <img src="4.png" alt="Image 4" class="image-item" />
+    </div>
+    <div class="image-box" style="background-color: #FFDEAD; border-top-right-radius: 50px;">
+        <div class="text-overlay">Expansion<br>and New Features</div>
+        <img src="5.png" alt="Image 5" class="image-item" />
+    </div>
+</div>
+         <!-- Tokenomics Section -->
+<h1 class="tokenomics-title">TOKENOMICS</h1>
+
+<div class="tokenomics-container">
+    
+
+    <div class="buttons-container">
+        <div class="big-button" style="background-color:  #2E2E2E;">
+            <span class="button-text" style="font-family: 'Font1'; color: #ffffff;">Liquidity</span><br>
+            <span class="button-text" style="font-family: 'Font2'; color: #ff0000;">Locked</span>
+        </div>
+
+        <div class="big-button" style="background-color:  #2E2E2E;">
+            <span class="button-text" style="font-family: 'Font1'; color: #ffffff;">Contract</span><br>
+            <span class="button-text" style="font-family: 'Font2'; color: #ff0000;">Renounced</span>
+        </div>
+
+        <div class="big-button" style="background-color: #2E2E2E;">
+            <span class="button-text" style="font-family: 'Font1'; color: #ffffff;">Taxes</span><br>
+            <span class="button-text" style="font-family: 'Font2'; color: #ff0000;">0%</span>
+        </div>
+    </div>
+    <img src="8.png" alt="Tokenomics Image" class="tokenomics-image" />
+</div>
+<h1 class="merchandise-heading">MERCHANDISE</h1>
+
+<!-- Media Container -->
+<div class="media-container">
+    <button class="arrow-button left" onclick="prevMedia()">&#9664;</button>
+
+    <div class="media-content" id="media-slider">
+        <div class="media-slide" style="background-image: url('a1.png');">
+            <img src="a.png" alt="Overlay A" class="overlay-image">
+        </div>
+        <div class="media-slide" style="background-image: url('b1.png');">
+            <img src="b.png" alt="Overlay B" class="overlay-image">
+        </div>
+        <div class="media-slide" style="background-image: url('c1.png');">
+            <img src="c.png" alt="Overlay C" class="overlay-image">
+        </div>
+        <div class="media-slide" style="background-image: url('d1.png');">
+            <img src="d.png" alt="Overlay D" class="overlay-image">
+        </div>
+    </div>
+
+    <button class="arrow-button right" onclick="nextMedia()">&#9654;</button>
+</div>
+<div class="games-container">
+    <h1 class="games-heading">GAMES</h1>
+    <p class="games-caption">Stay tuned for upcoming games!</p>
+        <div class="image-slider">
+            <img id="game-image" src="g1.png" alt="Game Image">
+            <div class="arrow right-arrow" onclick="nextImage()">➔</div>
+        </div>
+    </div>
+    <div class="games-preview-container">
+        <h3 class="games-preview-heading">Games Preview</h3>
+        <div class="preview-images">
+            <img src="p1.png" alt="Preview 1">
+            <img src="p2.png" alt="Preview 2">
+            <img src="p3.png" alt="Preview 3">
+        </div>
+    </div>
+    <div class="social-media-container">
+        <h3>SOCIAL MEDIA LINKS</h3>
+        <div class="social-media-icons">
+            <div class="left-icons">
+                <img src="t.png" alt="Social Media Icon" class="round-icon">
+                <img src="u.png" alt="Social Media Icon" class="round-icon">
+            </div>
+            <img src="10.png" style="size: 500px;"  class="main-icon">
+        </div>
+    </div>
+</div>
+
+
+
+            <!-- Add more content here to enable scrolling -->
+            <div style="height: 2000px;"></div>
+        </div>
+        
+    </div>
+      
+    <script>
+        let currentMediaIndex = 0;
+        const mediaItems = {
+            all: [
+                '<img src="2.png" alt="Image 1" class="media-item" />',
+                '<img src="3.png" alt="Image 2" class="media-item" />',
+                '<video class="media-item" controls><source src="video1.mp4" type="video/mp4"></video>',
+                '<img src="4.png" alt="Image 3" class="media-item" />',
+                '<video class="media-item" controls><source src="video2.mp4" type="video/mp4"></video>'
+            ],
+            images: [
+                '<img src="2.png" alt="Image 1" class="media-item" />',
+                '<img src="3.png" alt="Image 2" class="media-item" />',
+                '<img src="4.png" alt="Image 3" class="media-item" />'
+            ],
+            videos: [
+                '<video class="media-item" controls><source src="video1.mp4" type="video/mp4"></video>',
+                '<video class="media-item" controls><source src="video2.mp4" type="video/mp4"></video>'
+            ]
+        };
+
+        function showAll() {
+            updateMediaDisplay('all');
+        }
+
+        function showImages() {
+            updateMediaDisplay('images');
+        }
+
+        function showVideos() {
+            updateMediaDisplay('videos');
+        }
+
+        function updateMediaDisplay(type) {
+            const mediaContainer = document.getElementById('media-container');
+            currentMediaIndex = 0; // Reset index
+            mediaContainer.innerHTML = mediaItems[type].slice(0, 3).join(''); // Show first 3 items
+        }
+
+        function prevMedia() {
+            if (currentMediaIndex > 0) {
+                currentMediaIndex--;
+                updateMediaSet();
+            }
+        }
+
+        function nextMedia() {
+            if (currentMediaIndex < mediaItems.all.length - 3) {
+                currentMediaIndex++;
+                updateMediaSet();
+            }
+        }
+
+        function updateMediaSet() {
+            const mediaContainer = document.getElementById('media-container');
+            const selectedType = document.querySelector('.media-heading span.active')?.id?.split('-')[0] || 'all';
+            mediaContainer.innerHTML = mediaItems[selectedType].slice(currentMediaIndex, currentMediaIndex + 3).join('');
+        }
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.media-slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = (i === index) ? 'block' : 'none';
+            });
+        }
+
+        function prevMedia() {
+            currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+            showSlide(currentSlide);
+        }
+
+        function nextMedia() {
+            currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+            showSlide(currentSlide);
+        }
+
+        // Initialize the first slide
+        showSlide(currentSlide);
+        let currentImageIndex = 0;
+const images = ["g1.png", "g2.png"]; // Add more image filenames as needed
+
+function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length; // Loop back to the first image
+    document.getElementById("game-image").src = images[currentImageIndex];
+}
+
+    </script>
+</body>
+</html>
